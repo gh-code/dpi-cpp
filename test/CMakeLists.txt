@@ -7,4 +7,8 @@
 # Official repository: https://github.com/gh-code/dpi-cpp
 #
 
-add_subdirectory (systemerilog)
+file(GLOB SOURCES "*.cpp")
+add_executable(gh_systemverilog-tests
+    ${SOURCES}
+    src/svdpi.cpp
+)

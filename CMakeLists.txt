@@ -9,14 +9,10 @@
 
 cmake_minimum_required(VERSION 3.7)
 
-project(main)
+project(gh_systemverilog VERSION "0.1" LANGUAGES CXX)
 
-#aux_source_directory(. DIR_SRC)
-include_directories (include)
+include_directories (include test/include)
 
 set (CMAKE_CXX_STANDARD 11)
 
-add_executable (main
-    main.cpp
-    src/svdpi.c
-)
+add_subdirectory(test)
