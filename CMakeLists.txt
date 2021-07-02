@@ -11,8 +11,8 @@ cmake_minimum_required(VERSION 3.7)
 
 project(gh_systemverilog VERSION "0.1" LANGUAGES CXX)
 
-include_directories (include test/include)
+include_directories(include)
 
-set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(test)
