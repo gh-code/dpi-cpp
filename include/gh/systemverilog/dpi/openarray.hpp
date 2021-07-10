@@ -36,6 +36,7 @@ template<std::size_t N>
 using make_index_sequence = make_integer_sequence<std::size_t, N>;
 
 namespace systemverilog {
+namespace dpi {
 
 namespace detail {
 
@@ -397,19 +398,8 @@ public:
     }
 };
 
-struct byte_t      { using value_type = char; };
-struct shortint_t  { using value_type = short int; };
-struct int_t       { using value_type = int; };
-struct longint_t   { using value_type = long long; };
-struct real_t      { using value_type = double; };
-struct shortreal_t { using value_type = float; };
-struct chandle_t   { using value_type = void*; };
-struct string_t    { using value_type = const char*; };
-struct bit_t       { using value_type = unsigned char; };
-struct logic_t     { using value_type = unsigned char; };
-struct reg_t       { using value_type = unsigned char; };
-
-} // namespace sv
+} // dpi
+} // namespace systemverilog
 } // namespace gh
 
 #endif // GH_SYSTEMVERIOLG_DPI_OPENARRAY_HPP

@@ -67,7 +67,7 @@ void dpi_func(svOpenArrayHandle h)
 
 New way,
 ```cpp
-namespace sv = gh::systemverilog;
+namespace sv = gh::systemverilog::dpi;
 using sv_int = gh::systemverilog::int_t;
 
 void dpi_func(svOpenArrayHandle h)
@@ -93,7 +93,7 @@ void dpi_func(svOpenArrayHandle h)
 
 or
 ```cpp
-// namespace sv = gh::systemverilog;
+// namespace sv = gh::systemverilog::dpi;
 // using sv_int = gh::systemverilog::int_t;
 //
 // void dpi_func(svOpenArrayHandle h)

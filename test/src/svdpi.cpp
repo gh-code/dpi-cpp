@@ -12,6 +12,11 @@
 #include <stdarg.h>
 #include <assert.h>
 
+const char* svDpiVersion()
+{
+    return "1.0";
+}
+
 int svDimensions(svOpenArrayHandle h)
 {
     return *(int*)((char*) h + sizeof(void*));

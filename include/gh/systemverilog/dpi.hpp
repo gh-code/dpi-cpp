@@ -10,6 +10,10 @@
 #ifndef GH_SYSTEMVERILOG_DPI_HPP
 #define GH_SYSTEMVERILOG_DPI_HPP
 
+#include <gh/systemverilog/dpi/version.hpp>
+#include <gh/systemverilog/dpi/scope.hpp>
 #include <gh/systemverilog/dpi/openarray.hpp>
+#include <gh/systemverilog/dpi/type.hpp>
+#include <gh/systemverilog/dpi/vector.hpp>
 
 #endif // GH_SYSTEMVERILOG_DPI_HPP

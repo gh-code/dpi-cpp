@@ -2,7 +2,7 @@
 #include "dpi.hpp"
 // #include <boost/test/included/unit_test.hpp>
 
-namespace sv = gh::systemverilog;
+namespace sv = gh::systemverilog::dpi;
 using sv_int = gh::systemverilog::int_t;
 
 void dpi_func_0d(svOpenArrayHandle h)

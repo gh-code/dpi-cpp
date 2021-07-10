@@ -1,7 +1,7 @@
 #include <gh/systemverilog/dpi.hpp>
 #include "dpi.hpp"
 
-namespace sv = gh::systemverilog;
+namespace sv = gh::systemverilog::dpi;
 using sv_int = gh::systemverilog::int_t;
 
 void dpi_func_4d(svOpenArrayHandle h)
