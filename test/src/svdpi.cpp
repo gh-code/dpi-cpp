@@ -14,7 +14,7 @@
 
 const char* svDpiVersion()
 {
-    return "1.0";
+    return "P1800-2005";
 }
 
 int svDimensions(svOpenArrayHandle h)

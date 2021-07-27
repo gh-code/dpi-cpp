@@ -7,9 +7,21 @@
 // Official repository: https://github.com/gh-code/dpi-cpp
 //
 
+#ifndef GH_SYSTEMVERIOLG_SIMULATOR_HPP
+#define GH_SYSTEMVERIOLG_SIMULATOR_HPP
+
 #include <cstddef>
 #include <cstdarg>
 #include <svdpi.h>
+
+namespace gh {
+namespace systemverilog {
+
+class simulator
+{
+public:
+
+};
 
 svOpenArrayHandle create(int dim, int left, int right, ...)
 {
@@ -42,3 +54,9 @@ int* alloc_arr(svOpenArrayHandle h, int& size)
     *(T**) h = new T[size];
     return *(T**) h;
 }
+
+} // namespace systemverilog
+} // namespace gh
+
+
+#endif // GH_SYSTEMVERIOLG_SIMULATOR_HPP
